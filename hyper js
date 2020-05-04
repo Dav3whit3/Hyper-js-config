@@ -165,7 +165,6 @@ module.exports = {
     "hyperpower",
     "hyper-statusline",
     "hyper-tabs-enhanced",
-    "hyperline",
     "hyperlinks",
     "hyper-electron-highlighter"
       ],
