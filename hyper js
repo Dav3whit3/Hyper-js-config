@@ -7,7 +7,9 @@ module.exports = {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
-
+    
+    
+        
     // default font size in pixels for all tabs
     fontSize: 12,
       MaterialTheme: {
@@ -27,7 +29,9 @@ module.exports = {
           // NOTE: The backgroundOpacity should be between 0.1 and 0.9 to see the effect.
           vibrancy: 'dark'
       },
+      
 	
+        
     // font family with optional fallbacks
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     
@@ -109,7 +113,12 @@ module.exports = {
       lightCyan: '#68FDFE',
       lightWhite: '#FFFFFF',
     },
-
+    
+    
+    hyperStatusLine: {//dirtyColor: 'black',
+    		      footerTransparent: false,
+    },
+    
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
     //
@@ -158,6 +167,7 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
+    
 
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
@@ -175,6 +185,7 @@ module.exports = {
     "hyper-electron-highlighter",
     'hyper-solarized-light'
       ],
+
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
