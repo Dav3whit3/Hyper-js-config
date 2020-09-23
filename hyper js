@@ -1,3 +1,7 @@
+// Future versions of Hyper may add additional config options,
+// which will not automatically be merged into this file.
+// See https://hyper.is#cfg for all currently supported options.
+
 module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
@@ -6,7 +10,7 @@ module.exports = {
 
     // default font size in pixels for all tabs
     fontSize: 12,
-    MaterialTheme: {
+      MaterialTheme: {
           // Set the theme variant,
           // OPTIONS: 'Darker', 'Palenight', 'Ocean', ''
           theme: '',
@@ -56,7 +60,9 @@ module.exports = {
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#000',
+    
+    backgroundColor: '#20C5C6',
+     
 
     // terminal selection color
     selectionColor: 'rgba(248,28,229,0.3)',
@@ -160,13 +166,14 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyper-material-theme",
+    
     "gitrocket",
     "hyperpower",
     "hyper-statusline",
     "hyper-tabs-enhanced",
     "hyperlinks",
-    "hyper-electron-highlighter"
+    "hyper-electron-highlighter",
+    'hyper-solarized-light'
       ],
 
   // in development, you can create a directory under
